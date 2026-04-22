@@ -1,0 +1,32 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.portfolio-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: #007BFF;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #666;
+}
