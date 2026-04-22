@@ -4,18 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Phạm Trọng Nguyễn - Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
+    <header class="header">
+        <div class="container">
+            <div class="logo">PTN</div>
+            <nav class="nav">
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="#" class="btn-contact">Let's Talk</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <p>This is my portfolio website where you can find information about my projects and skills.</p>
-    </main>
-    <footer>
-        <p>Contact me at myemail@example.com</p>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <img src="avatar.jpg" alt="Phạm Trọng Nguyễn">
+                </div>
+                <div class="hero-text">
+                    <h1>Phạm Trọng Nguyễn</h1>
+                    <p class="role">Web Developer & Designer</p>
+                    <p class="bio">Hi! I'm a passionate web developer with expertise in creating beautiful and functional websites. I love turning ideas into reality through code.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend Development</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                        <li>REST APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Webpack</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proficiency">
+                <h3>Technical Proficiency</h3>
+                <div class="progress-item">
+                    <label>HTML/CSS</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                    <span>95%</span>
+                </div>
+                <div class="progress-item">
+                    <label>JavaScript</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <span>85%</span>
+                </div>
+                <div class="progress-item">
+                    <label>React.js</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <span>80%</span>
+                </div>
+                <div class="progress-item">
+                    <label>Node.js</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 78%;"></div>
+                    </div>
+                    <span>78%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce solution with user authentication, product management, and payment integration.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Stripe</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                    <h3>Task Management App</h3>
+                    <p>A collaborative task management application with real-time updates, team collaboration, and progress tracking.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Firebase</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                    <h3>Weather Dashboard</h3>
+                    <p>A weather application featuring real-time data, location-based forecasts, and interactive weather maps.</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>Weather API</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>I'm always interested in hearing about new projects and opportunities.</p>
+            
+            <div class="contact-info">
+                <a href="mailto:phamnguyenh37h@gmail.com" class="contact-item">
+                    <span class="icon">✉️</span>
+                    <span>phamnguyenh37h@gmail.com</span>
+                </a>
+                <a href="tel:+84123456789" class="contact-item">
+                    <span class="icon">📱</span>
+                    <span>+84 (123) 456-789</span>
+                </a>
+                <a href="https://github.com/phamnguyenh37h-ai" class="contact-item">
+                    <span class="icon">💻</span>
+                    <span>GitHub</span>
+                </a>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Phạm Trọng Nguyễn. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
